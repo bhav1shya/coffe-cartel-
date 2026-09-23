@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-espresso-dark: #0f0a07;
+    --color-espresso: #1b120c;
+    --color-espresso-surface: #221811;
+    --color-espresso-card: #291e16;
+    --color-espresso-border: rgba(197, 160, 89, 0.16);
+    --color-cream: #FAF7F2;
+    --color-cream-muted: #E6DDD0;
+    --color-coffee-beige: #C8B69E;
+    --color-gold: #C5A059;
+    --color-gold-light: #DFC287;
+    --color-champagne: #F1E5D1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #F3EDE4;
+    background-color: #0f0a07;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Subtle luxury grain */
+.bg-cafe-noise {
+  background-image: radial-gradient(rgba(245, 235, 220, 0.035) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Hairline borders */
+.border-gold-subtle {
+  border-color: rgba(197, 160, 89, 0.16);
+}
+
+.border-dark-hairline {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Glassmorphism for sticky header */
+.glass-cafe-header {
+  background: rgba(15, 10, 7, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+}
+
+/* Animations */
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-subtle-float {
+  animation: subtleFloat 5s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0a07;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #422f22;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}

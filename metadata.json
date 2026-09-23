@@ -1,0 +1,6 @@
+{
+  "name": "The Coffee Cartel Jaipur | Cafe, Coffee & Food",
+  "description": "The Coffee Cartel Jaipur — great coffee, delicious food and good vibes in Bajaj Nagar, Jaipur.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
